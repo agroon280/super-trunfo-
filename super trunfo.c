@@ -3,6 +3,9 @@
  int main() {
 int populacao1, populacao2, turismo1,turismo2;
 float area1, area2, pib1, pib2;
+float densidade1, densidade2;
+float renda1, renda2;
+
 char codigo1[10] ,codigo2[10], cidade1[10],cidade2[10], estado1[10], estado2[10];
 //criadas as variaveis, prossiga para o proximo passo, para usar printf e scanf
 
@@ -49,6 +52,12 @@ scanf("%d", &turismo1);
 printf("digite pontos turisticos : \n");
 scanf("%d", &turismo2);
 
+densidade1 = populacao1 /area1;
+densidade2 = populacao2 / area2;
+
+renda1 = pib1 / populacao1;
+renda2 = pib2 / populacao2;
+
 //terminado o segundo estagio do codigo, fazer a parte final de saida das informaçoes
 
 //DADOS CARTA 1
@@ -59,6 +68,8 @@ printf("Populaçao: %d milhoes \n", populacao1);
 printf("area: %.2f km² \n", area1);
 printf("PIB: %.2f Bilhoes de reais \n", pib1);
 printf("Turismo: %d lugares 2\n", turismo1);
+printf("densidade populacional: %.2f pessoa/km2 2\n", densidade1);
+printf("renda per capta: %.2f reais por pessoa 2\n", renda1);
 printf("\n");
 
 //DADOS CARTA 2
@@ -69,6 +80,8 @@ printf("Populaçao: %d milhoes \n", populacao2);
 printf("area: %.2f km² \n", area2);
 printf("PIB: %.2f Bilhoes de reais \n", pib2);
 printf("Turismo: %d lugares \n", turismo2);
+printf("densidade populacional: %.2f pessoa/km^2 2\n", densidade2);
+printf("renda per capta: %.2f reais por pessoa 2\n", renda2);
 return 0;
 
  }
