@@ -89,20 +89,20 @@ printf("Populaçao: %d milhoes \n", populacao2);
 printf("area: %.2f km² \n", area2);
 printf("PIB: %.2f Bilhoes de reais \n", pib2);
 printf("Turismo: %d lugares \n", turismo2);
-printf("densidade populacional: %.2f pessoa/km^2 2\n", densidade2);
-printf("renda per capta: %.2f reais por pessoa 2\n", renda2);
-printf("superpoder: %f \n", superpoder2);
+printf("densidade populacional: %.2f pessoa/km^2 \n", densidade2);
+printf("renda per capta: %.2f reais por pessoa \n", renda2);
+printf("superpoder: %.2f \n", superpoder2);
 
 //agora, comparar as cartas 
 printf(" ");
 printf("1 = carta 1 \t 0 = carta 2");
 printf("populaçao:carta %d venceu \n",populacao1<populacao2);
-printf("area:carta %f venceu \n",area1<area2);
-printf("PIB:carta %f venceu \n",pib1<pib2);
+printf("area:carta %d venceu \n",area1<area2);
+printf("PIB:carta %d venceu \n",pib1<pib2);
 printf("ponto turisicos:carta %d venceu \n",turismo1 < turismo2);
-printf("densidade populacional:carta %f venceu\n",densidade1<= densidade2);
-printf("renda per capta: %f venceu\n",renda1 > renda2);
-printf("superpoder:carta %f venceu\n",superpoder1<superpoder2);
+printf("densidade populacional:carta %d venceu \n",densidade1<= densidade2);
+printf("renda per capta: %d venceu \n",renda1 > renda2);
+printf("superpoder:carta %d venceu \n",superpoder1<superpoder2);
 
 return 0;
 
