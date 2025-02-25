@@ -6,7 +6,7 @@ float area1, area2, pib1, pib2;
 float superpoder1; 
 float superpoder2;  
 float densidade1, densidade2;
-float densidadeinver1, densidadeinver2;
+float densidadeinver1, densidadeinver2; 
 float renda1, renda2;
 char codigo1[10] ,codigo2[10], cidade1[10],cidade2[10], estado1[10], estado2[10];
 //criadas as variaveis, prossiga para o proximo passo, para usar printf e scanf
@@ -53,15 +53,15 @@ scanf("%d", &turismo1);
 
 printf("digite pontos turisticos : \n");
 scanf("%d", &turismo2);
- 
+
+densidadeinver1 = area1 / populacao1;
+densidadeinver2 = area2 / populacao2;
+
 superpoder1 = populacao1 + pib1 + renda1+ turismo1+ area1+densidadeinver1;
 superpoder2 = populacao2 + pib2 + renda2+ turismo2+ area2+densidadeinver2;
  
 densidade1 = populacao1 /area1;
 densidade2 = populacao2 / area2;
-
-densidadeinver1 = area1 / populacao1;
-densidadeinver2 = area2 / populacao2;
 
 renda1 = pib1 / populacao1;
 renda2 = pib2 / populacao2;
@@ -92,9 +92,17 @@ printf("Turismo: %d lugares \n", turismo2);
 printf("densidade populacional: %.2f pessoa/km^2 2\n", densidade2);
 printf("renda per capta: %.2f reais por pessoa 2\n", renda2);
 printf("superpoder: %f \n", superpoder2);
+
+//agora, comparar as cartas 
 printf(" ");
-printf("1 = carta 1 \t0 = carta 2");
- 
+printf("1 = carta 1 \t 0 = carta 2");
+printf("populaçao:carta %d venceu \n",populacao1<populacao2);
+printf("area:carta %f venceu \n",area1<area2);
+printf("PIB:carta %f venceu \n",pib1<pib2);
+printf("ponto turisicos:carta %d venceu \n",turismo1 < turismo2);
+printf("densidade populacional:carta %f venceu\n",densidade1<= densidade2);
+printf("renda per capta: %f venceu\n",renda1 > renda2);
+printf("superpoder:carta %f venceu\n",superpoder1<superpoder2);
 
 return 0;
 
